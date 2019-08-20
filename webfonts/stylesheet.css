@@ -1,5 +1,5 @@
 /* IBM Plex Thai */
-@font-face {
+/* @font-face {
   font-family: 'IBM Plex Thai';
   src: url('IBMPlexThai-SemiBold.otf') format('opentype');
   font-weight: bold;
@@ -10,10 +10,10 @@
   src: url('IBMPlexThai-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /* Noto Sans Thai UI Web fonts - PAKIN.ME */
-/* @font-face {
+@font-face {
   font-family: 'Noto Sans Thai UI';
   src: url('subset-NotoSansThaiUI-Bold.woff2') format('woff2'), url('subset-NotoSansThaiUI-Bold.woff') format('woff');
   font-weight: bold;
@@ -24,7 +24,7 @@
   src: url('subset-NotoSansThaiUI-Regular.woff2') format('woff2'), url('subset-NotoSansThaiUI-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 /* Font face The Matter */
 /* @font-face {

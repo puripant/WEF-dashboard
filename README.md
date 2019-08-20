@@ -1,3 +1,3 @@
 # WEF Dashboard
 
-Built with Vega-Lite.
+Yet another visual display to present indicators across countries and time frames. Built with Vega-Lite.
