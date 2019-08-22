@@ -83,9 +83,9 @@ let spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
   "description": "Yet another visual display to present indicators across countries and time frames",
   "config": {
-    "view": {
-      "stroke": "transparent"
-    }
+    "style": { "cell": { "stroke": "transparent" } },
+    "axis": { "labelFont": "Noto Sans Thai UI", "titleFont": "Noto Sans Thai UI", "titlePadding": 15 },
+    "text": { "font": "Noto Sans Thai UI" }
   },
   "data": { name: "table", values: data },
   "vconcat": [
