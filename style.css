@@ -4,33 +4,6 @@ body {
   font: normal 14px 'Noto Sans Thai UI', sans-serif;
   color: black;
   background-color: white;
-  /* width: 1000px; */
-  max-width: 1000px;
+  width: 900px;
   margin: 10px auto;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#desc {
-  order: 1;
-  /* width: 20%; */
-  flex-basis: 100%;
-  padding: 0 20px;
-}
-
-#vis {
-  order: 2;
-  /* width: 80%; */
-  flex-basis: 100%;
-  margin: 20px 0 20px 20px;
-  padding: 0;
-}
-
-@media screen and (min-width: 1000px) {
-  #desc {
-    flex: 1;
-  }
-  #vis {
-    flex: 4;
-  }
 }

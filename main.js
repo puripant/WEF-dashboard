@@ -1,59 +1,116 @@
+const domain_end = 160;
+const axis = { grid: false, title: false, ticks: false, tickCount: 1, labelExpr: "'อันดับดี'", labelPadding: 10 };
+
 let histogram = (country, color, year) => ({
     "transform": [ { "filter": { "field": "year", "equal": year } } ],
     "mark": {
-      type: "line",
+      type: "area",
+      interpolate: "basis", //"cardinal", //"monotone",
       // type: "bar",
       // binSpacing: 0,
-      // opacity: 0.5,
+      opacity: 0.5,
       color: color
+      // line: { color: color},
+      // color: {
+      //   "x1": 1, "y1": 1, "x2": 1, "y2": 0,
+      //   "gradient": "linear",
+      //   "stops": [
+      //     { "offset": 0, "color": "white" },
+      //     { "offset": 1, "color": color }
+      //   ]
+      // }
     },
     "encoding": {
       "x": {
         "field": country,
-        "bin": { "step": 10 },
+        "bin": { "step": 5 },
         "type": "quantitative",
-        "title": ""
+        "sort": "descending",
+        "scale": { "domain": [0, domain_end] },
+        // "axis": null,
+        "axis": axis
+      },
+      "y": {
+        "aggregate": "count",
+        "type": "quantitative",
+        "scale": { "domain": [0, 30] },
+        "axis": null
       }
     }
-  })
+  });
+let mean = (country, color, year) => ({
+    "transform": [ { "filter": { "field": "year", "equal": year } } ],
+    "mark": "rule",
+    "encoding": {
+      "x": {
+        "field": country,
+        "aggregate": "mean",
+        "type": "quantitative",
+        "sort": "descending",
+        "scale": { "domain": [0, domain_end] },
+        // "axis": null
+        "axis": axis
+      },
+      "color": {"value": color},
+      "size": {"value": 2}
+    }
+  });
+let mean_text = (country, color, year, text) => ({
+    "transform": [ { "filter": { "field": "year", "equal": year } } ],
+    "mark": {
+      type: "text",
+      "baseline": "top",
+      "align": "left",
+      "dx": 5
+    },
+    "encoding": {
+      "x": {
+        "field": country,
+        "aggregate": "mean",
+        "type": "quantitative",
+        "sort": "descending",
+        "scale": { "domain": [0, domain_end] },
+        // "axis": null
+        "axis": axis
+      },
+      "y": { "value": 0 },
+      "color": {"value": color},
+      "text": {"value": text }
+    }
+  });
 
 let spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
   "description": "Yet another visual display to present indicators across countries and time frames",
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
   "data": { name: "table", values: data },
   "vconcat": [
     {
       "width": 800,
       "height": 100,
       // "transform": [ { "filter": { "field": "year", "equal": "2017-2018" } } ],
-      "encoding": {
-        "y": {
-          "aggregate": "count",
-          "type": "quantitative",
-          "title": ""
-        }
-      },
       "layer": [
+        histogram("Viet Nam", "gold", "2017-2018"),
+        mean("Viet Nam", "gold", "2017-2018"),
+        mean_text("Viet Nam", "gold", "2017-2018", "เวียดนาม"),
+
         histogram("Thailand", "blue", "2017-2018"),
-        histogram("Viet Nam", "khaki", "2017-2018"),
-        // histogram("Indonesia", "green", "2017-2018"),
+        mean("Thailand", "blue", "2017-2018"),
+        mean_text("Thailand", "blue", "2017-2018", "ไทย"),
+
         histogram("Malaysia", "red", "2017-2018"),
-        // histogram("Singapore", "pink", "2017-2018"),
-        // histogram("Philippines", "orange", "2017-2018")
+        mean("Malaysia", "red", "2017-2018"),
+        mean_text("Malaysia", "red", "2017-2018", "มาเลเซีย"),
       ]
     },
     {
       "width": 800,
       "height": 100,
-      "encoding": {
-        "y": {
-          "aggregate": "count",
-          "type": "quantitative",
-          "title": ""
-        }
-      },
       "layer": [
-        histogram("Thailand", "blue", "2017-2018"),
         // histogram("Thailand", "blue", "2016-2017"),
         // histogram("Thailand", "blue", "2015-2016"),
         // histogram("Thailand", "blue", "2014-2015"),
@@ -64,6 +121,11 @@ let spec = {
         // histogram("Thailand", "blue", "2009-2010"),
         // histogram("Thailand", "blue", "2008-2009"),
         histogram("Thailand", "lightblue", "2007-2008"),
+        mean("Thailand", "lightblue", "2007-2008"),
+        mean_text("Thailand", "lightblue", "2007-2008", "2551"),
+        histogram("Thailand", "blue", "2017-2018"),
+        mean("Thailand", "blue", "2017-2018"),
+        mean_text("Thailand", "blue", "2017-2018", "2561"),
       ]
     }
   ],
@@ -81,7 +143,7 @@ let opt = {
   },
   renderer: "svg",
   scaleFactor: 2,
-  downloadFileName: ""
+  downloadFileName: "wef"
 };
 
 vegaEmbed('#vis', spec, opt);
