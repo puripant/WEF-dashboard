@@ -1,3 +1,5 @@
+const width = 800;
+const height = 100;
 const domain_end = 160;
 const axis = { grid: false, title: false, ticks: false, tickCount: 1, labelExpr: "'อันดับดี'", labelPadding: 10 };
 
@@ -8,7 +10,7 @@ let histogram = (country, color, year) => ({
       interpolate: "basis", //"cardinal", //"monotone",
       // type: "bar",
       // binSpacing: 0,
-      opacity: 0.5,
+      opacity: 0.3,
       color: color
       // line: { color: color},
       // color: {
@@ -25,7 +27,7 @@ let histogram = (country, color, year) => ({
         "field": country,
         "bin": { "step": 5 },
         "type": "quantitative",
-        "sort": "descending",
+        // "sort": "descending",
         "scale": { "domain": [0, domain_end] },
         // "axis": null,
         "axis": axis
@@ -46,13 +48,13 @@ let mean = (country, color, year) => ({
         "field": country,
         "aggregate": "mean",
         "type": "quantitative",
-        "sort": "descending",
+        // "sort": "descending",
         "scale": { "domain": [0, domain_end] },
         // "axis": null
         "axis": axis
       },
-      "color": {"value": color},
-      "size": {"value": 2}
+      "color": { "value": color},
+      "size": { "value": 2}
     }
   });
 let mean_text = (country, color, year, text) => ({
@@ -68,7 +70,7 @@ let mean_text = (country, color, year, text) => ({
         "field": country,
         "aggregate": "mean",
         "type": "quantitative",
-        "sort": "descending",
+        // "sort": "descending",
         "scale": { "domain": [0, domain_end] },
         // "axis": null
         "axis": axis
@@ -78,6 +80,20 @@ let mean_text = (country, color, year, text) => ({
       "text": {"value": text }
     }
   });
+let subtitle = (text) => ({
+    "mark": {
+      type: "text",
+      baseline: "top",
+      align: "left",
+      dx: 5
+    },
+    "encoding": {
+      "x": { "value": 0 },
+      "y": { "value": 0 },
+      "color": { "value": "black" },
+      "text": { "value": text }
+    }
+  })
 
 let spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
@@ -90,8 +106,8 @@ let spec = {
   "data": { name: "table", values: data },
   "vconcat": [
     {
-      "width": 800,
-      "height": 100,
+      "width": width,
+      "height": height,
       // "transform": [ { "filter": { "field": "year", "equal": "2017-2018" } } ],
       "layer": [
         histogram("Viet Nam", "gold", "2017-2018"),
@@ -105,11 +121,12 @@ let spec = {
         histogram("Malaysia", "red", "2017-2018"),
         mean("Malaysia", "red", "2017-2018"),
         mean_text("Malaysia", "red", "2017-2018", "มาเลเซีย"),
+        subtitle("2561")
       ]
     },
     {
-      "width": 800,
-      "height": 100,
+      "width": width,
+      "height": height,
       "layer": [
         // histogram("Thailand", "blue", "2016-2017"),
         // histogram("Thailand", "blue", "2015-2016"),
@@ -126,6 +143,7 @@ let spec = {
         histogram("Thailand", "blue", "2017-2018"),
         mean("Thailand", "blue", "2017-2018"),
         mean_text("Thailand", "blue", "2017-2018", "2561"),
+        subtitle("ไทย")
       ]
     }
   ],
@@ -141,7 +159,7 @@ let opt = {
     PNG_ACTION: "บันทึกเป็น PNG",
     SVG_ACTION: "บันทึกเป็น SVG"
   },
-  renderer: "svg",
+  renderer: "canvas",
   scaleFactor: 2,
   downloadFileName: "wef"
 };
