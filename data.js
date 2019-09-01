@@ -36,7 +36,7 @@ const data = [
     "Colombia" : 99,
     "Congo, Democratic Rep." : 123,
     "Costa Rica" : 43,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 113,
     "Cyprus" : 55,
     "Czech Republic" : 48,
@@ -193,7 +193,7 @@ const data = [
     "Colombia" : 74,
     "Congo, Democratic Rep." : 111,
     "Costa Rica" : 33,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 84,
     "Cyprus" : 47,
     "Czech Republic" : 31,
@@ -350,7 +350,7 @@ const data = [
     "Colombia" : 131,
     "Congo, Democratic Rep." : 110,
     "Costa Rica" : 64,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 105,
     "Cyprus" : 53,
     "Czech Republic" : 99,
@@ -507,7 +507,7 @@ const data = [
     "Colombia" : 124,
     "Congo, Democratic Rep." : 95,
     "Costa Rica" : 61,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 116,
     "Cyprus" : 84,
     "Czech Republic" : 89,
@@ -664,7 +664,7 @@ const data = [
     "Colombia" : 96,
     "Congo, Democratic Rep." : 128,
     "Costa Rica" : 55,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 77,
     "Cyprus" : 47,
     "Czech Republic" : 46,
@@ -821,7 +821,7 @@ const data = [
     "Colombia" : 111,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 26,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 114,
     "Cyprus" : 40,
     "Czech Republic" : 45,
@@ -978,7 +978,7 @@ const data = [
     "Colombia" : 119,
     "Congo, Democratic Rep." : 87,
     "Costa Rica" : 51,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 122,
     "Cyprus" : 72,
     "Czech Republic" : 95,
@@ -1135,7 +1135,7 @@ const data = [
     "Colombia" : 129,
     "Congo, Democratic Rep." : 105,
     "Costa Rica" : 101,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 114,
     "Cyprus" : 42,
     "Czech Republic" : 81,
@@ -1292,7 +1292,7 @@ const data = [
     "Colombia" : 123,
     "Congo, Democratic Rep." : 100,
     "Costa Rica" : 125,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 135,
     "Cyprus" : 36,
     "Czech Republic" : 119,
@@ -1449,7 +1449,7 @@ const data = [
     "Colombia" : 122,
     "Congo, Democratic Rep." : 92,
     "Costa Rica" : 74,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 135,
     "Cyprus" : 85,
     "Czech Republic" : 94,
@@ -1606,7 +1606,7 @@ const data = [
     "Colombia" : 105,
     "Congo, Democratic Rep." : 108,
     "Costa Rica" : 45,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 135,
     "Cyprus" : 44,
     "Czech Republic" : 112,
@@ -1763,7 +1763,7 @@ const data = [
     "Colombia" : 86,
     "Congo, Democratic Rep." : 108,
     "Costa Rica" : 38,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 128,
     "Cyprus" : 47,
     "Czech Republic" : 73,
@@ -1920,7 +1920,7 @@ const data = [
     "Colombia" : 132,
     "Congo, Democratic Rep." : 63,
     "Costa Rica" : 21,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 18,
     "Cyprus" : 61,
     "Czech Republic" : 14,
@@ -2077,7 +2077,7 @@ const data = [
     "Colombia" : 128,
     "Congo, Democratic Rep." : 73,
     "Costa Rica" : 86,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 24,
     "Cyprus" : 39,
     "Czech Republic" : 19,
@@ -2234,7 +2234,7 @@ const data = [
     "Colombia" : 131,
     "Congo, Democratic Rep." : 88,
     "Costa Rica" : 74,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 67,
     "Cyprus" : 70,
     "Czech Republic" : 16,
@@ -2391,7 +2391,7 @@ const data = [
     "Colombia" : 114,
     "Congo, Democratic Rep." : 113,
     "Costa Rica" : 57,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 58,
     "Cyprus" : 55,
     "Czech Republic" : 52,
@@ -2548,7 +2548,7 @@ const data = [
     "Colombia" : 113,
     "Congo, Democratic Rep." : 129,
     "Costa Rica" : 46,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 97,
     "Cyprus" : 61,
     "Czech Republic" : 60,
@@ -2705,7 +2705,7 @@ const data = [
     "Colombia" : 59,
     "Congo, Democratic Rep." : 131,
     "Costa Rica" : 47,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : 92,
     "Czech Republic" : 31,
@@ -2862,7 +2862,7 @@ const data = [
     "Colombia" : 44,
     "Congo, Democratic Rep." : 81,
     "Costa Rica" : 42,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 101,
     "Cyprus" : 116,
     "Czech Republic" : 20,
@@ -3019,7 +3019,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : 79,
     "Costa Rica" : 52,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 102,
     "Cyprus" : 68,
     "Czech Republic" : 48,
@@ -3176,7 +3176,7 @@ const data = [
     "Colombia" : 13,
     "Congo, Democratic Rep." : 124,
     "Costa Rica" : 126,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 26,
     "Cyprus" : 26,
     "Czech Republic" : 51,
@@ -3333,7 +3333,7 @@ const data = [
     "Colombia" : 109,
     "Congo, Democratic Rep." : 135,
     "Costa Rica" : 110,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 37,
     "Cyprus" : 36,
     "Czech Republic" : 43,
@@ -3490,7 +3490,7 @@ const data = [
     "Colombia" : 110,
     "Congo, Democratic Rep." : 136,
     "Costa Rica" : 123,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 19,
     "Cyprus" : 26,
     "Czech Republic" : 74,
@@ -3647,7 +3647,7 @@ const data = [
     "Colombia" : 96,
     "Congo, Democratic Rep." : 92,
     "Costa Rica" : "n/a",
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 70,
     "Cyprus" : "n/a",
     "Czech Republic" : 26,
@@ -3804,7 +3804,7 @@ const data = [
     "Colombia" : 77,
     "Congo, Democratic Rep." : 120,
     "Costa Rica" : 98,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 45,
     "Cyprus" : 46,
     "Czech Republic" : 94,
@@ -3961,7 +3961,7 @@ const data = [
     "Colombia" : 81,
     "Congo, Democratic Rep." : 123,
     "Costa Rica" : 64,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 74,
     "Cyprus" : 27,
     "Czech Republic" : 35,
@@ -4118,7 +4118,7 @@ const data = [
     "Colombia" : 37,
     "Congo, Democratic Rep." : 100,
     "Costa Rica" : 73,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 77,
     "Cyprus" : 64,
     "Czech Republic" : 63,
@@ -4275,7 +4275,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : 130,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 39,
     "Cyprus" : 45,
     "Czech Republic" : 18,
@@ -4432,7 +4432,7 @@ const data = [
     "Colombia" : 74,
     "Congo, Democratic Rep." : 125,
     "Costa Rica" : 64,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 30,
     "Cyprus" : 23,
     "Czech Republic" : 66,
@@ -4589,7 +4589,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : 79,
     "Costa Rica" : 12,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 96,
     "Cyprus" : 35,
     "Czech Republic" : 72,
@@ -4746,7 +4746,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : 28,
     "Costa Rica" : 103,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 39,
     "Cyprus" : 22,
     "Czech Republic" : 13,
@@ -4903,7 +4903,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 96,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 56,
     "Cyprus" : 108,
     "Czech Republic" : 36,
@@ -5060,7 +5060,7 @@ const data = [
     "Colombia" : 115,
     "Congo, Democratic Rep." : 136,
     "Costa Rica" : 58,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 89,
     "Cyprus" : 90,
     "Czech Republic" : 1,
@@ -5217,7 +5217,7 @@ const data = [
     "Colombia" : 65,
     "Congo, Democratic Rep." : 13,
     "Costa Rica" : 56,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 115,
     "Cyprus" : 126,
     "Czech Republic" : 42,
@@ -5374,7 +5374,7 @@ const data = [
     "Colombia" : 43,
     "Congo, Democratic Rep." : 132,
     "Costa Rica" : 60,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 67,
     "Cyprus" : 82,
     "Czech Republic" : 22,
@@ -5531,7 +5531,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : 115,
     "Costa Rica" : 33,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 11,
     "Cyprus" : 47,
     "Czech Republic" : 9,
@@ -5688,7 +5688,7 @@ const data = [
     "Colombia" : 59,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 33,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 36,
     "Cyprus" : 15,
     "Czech Republic" : 8,
@@ -5845,7 +5845,7 @@ const data = [
     "Colombia" : 73,
     "Congo, Democratic Rep." : 126,
     "Costa Rica" : 52,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 5,
     "Cyprus" : 47,
     "Czech Republic" : 4,
@@ -6002,7 +6002,7 @@ const data = [
     "Colombia" : 73,
     "Congo, Democratic Rep." : 97,
     "Costa Rica" : 73,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 1,
     "Cyprus" : 1,
     "Czech Republic" : 1,
@@ -6159,7 +6159,7 @@ const data = [
     "Colombia" : 76,
     "Congo, Democratic Rep." : 134,
     "Costa Rica" : 53,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 29,
     "Cyprus" : 11,
     "Czech Republic" : 12,
@@ -6316,7 +6316,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 33,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 43,
     "Cyprus" : 30,
     "Czech Republic" : 34,
@@ -6473,7 +6473,7 @@ const data = [
     "Colombia" : 91,
     "Congo, Democratic Rep." : 99,
     "Costa Rica" : 36,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 71,
     "Cyprus" : 56,
     "Czech Republic" : 28,
@@ -6630,7 +6630,7 @@ const data = [
     "Colombia" : 102,
     "Congo, Democratic Rep." : 112,
     "Costa Rica" : 58,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 27,
     "Cyprus" : 45,
     "Czech Republic" : 21,
@@ -6787,7 +6787,7 @@ const data = [
     "Colombia" : 56,
     "Congo, Democratic Rep." : 119,
     "Costa Rica" : 11,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 55,
     "Cyprus" : 48,
     "Czech Republic" : 29,
@@ -6944,7 +6944,7 @@ const data = [
     "Colombia" : 49,
     "Congo, Democratic Rep." : 122,
     "Costa Rica" : 52,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 27,
     "Cyprus" : 44,
     "Czech Republic" : 36,
@@ -7101,7 +7101,7 @@ const data = [
     "Colombia" : 83,
     "Congo, Democratic Rep." : 113,
     "Costa Rica" : 27,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 112,
     "Cyprus" : 55,
     "Czech Republic" : 59,
@@ -7258,7 +7258,7 @@ const data = [
     "Colombia" : 100,
     "Congo, Democratic Rep." : 98,
     "Costa Rica" : 52,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 57,
     "Cyprus" : 69,
     "Czech Republic" : 48,
@@ -7415,7 +7415,7 @@ const data = [
     "Colombia" : 63,
     "Congo, Democratic Rep." : 107,
     "Costa Rica" : 21,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 93,
     "Cyprus" : 74,
     "Czech Republic" : 61,
@@ -7572,7 +7572,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : 125,
     "Costa Rica" : 42,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 109,
     "Cyprus" : 53,
     "Czech Republic" : 24,
@@ -7729,7 +7729,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : 105,
     "Costa Rica" : 21,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 78,
     "Cyprus" : 50,
     "Czech Republic" : 19,
@@ -7886,7 +7886,7 @@ const data = [
     "Colombia" : 92,
     "Congo, Democratic Rep." : 128,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 130,
     "Cyprus" : 50,
     "Czech Republic" : 29,
@@ -8043,7 +8043,7 @@ const data = [
     "Colombia" : 22,
     "Congo, Democratic Rep." : 105,
     "Costa Rica" : 49,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 102,
     "Cyprus" : 24,
     "Czech Republic" : 14,
@@ -8200,7 +8200,7 @@ const data = [
     "Colombia" : 86,
     "Congo, Democratic Rep." : 117,
     "Costa Rica" : 38,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 113,
     "Cyprus" : 44,
     "Czech Republic" : 31,
@@ -8357,7 +8357,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : 113,
     "Costa Rica" : 48,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : 44,
     "Czech Republic" : 46,
@@ -8514,7 +8514,7 @@ const data = [
     "Colombia" : 131,
     "Congo, Democratic Rep." : 117,
     "Costa Rica" : 102,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 125,
     "Cyprus" : 13,
     "Czech Republic" : 48,
@@ -8671,7 +8671,7 @@ const data = [
     "Colombia" : 53,
     "Congo, Democratic Rep." : 70,
     "Costa Rica" : 104,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : 36,
     "Czech Republic" : 91,
@@ -8828,7 +8828,7 @@ const data = [
     "Colombia" : 53,
     "Congo, Democratic Rep." : 72,
     "Costa Rica" : 102,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 40,
     "Cyprus" : 29,
     "Czech Republic" : 53,
@@ -8985,7 +8985,7 @@ const data = [
     "Colombia" : 125,
     "Congo, Democratic Rep." : 132,
     "Costa Rica" : 96,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 134,
     "Cyprus" : 60,
     "Czech Republic" : 93,
@@ -9142,7 +9142,7 @@ const data = [
     "Colombia" : 135,
     "Congo, Democratic Rep." : 117,
     "Costa Rica" : 121,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 14,
     "Cyprus" : 22,
     "Czech Republic" : 110,
@@ -9299,7 +9299,7 @@ const data = [
     "Colombia" : 98,
     "Congo, Democratic Rep." : 129,
     "Costa Rica" : 117,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 23,
     "Cyprus" : 29,
     "Czech Republic" : 14,
@@ -9456,7 +9456,7 @@ const data = [
     "Colombia" : 85,
     "Congo, Democratic Rep." : 58,
     "Costa Rica" : 27,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 89,
     "Cyprus" : 62,
     "Czech Republic" : 5,
@@ -9613,7 +9613,7 @@ const data = [
     "Colombia" : 86,
     "Congo, Democratic Rep." : 98,
     "Costa Rica" : 41,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 99,
     "Cyprus" : 45,
     "Czech Republic" : 16,
@@ -9770,7 +9770,7 @@ const data = [
     "Colombia" : 89,
     "Congo, Democratic Rep." : 123,
     "Costa Rica" : 94,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 64,
     "Cyprus" : 39,
     "Czech Republic" : 34,
@@ -9927,7 +9927,7 @@ const data = [
     "Colombia" : 125,
     "Congo, Democratic Rep." : 130,
     "Costa Rica" : 98,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 53,
     "Cyprus" : 34,
     "Czech Republic" : 13,
@@ -10084,7 +10084,7 @@ const data = [
     "Colombia" : 81,
     "Congo, Democratic Rep." : 105,
     "Costa Rica" : 51,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 5,
     "Cyprus" : 6,
     "Czech Republic" : 6,
@@ -10241,7 +10241,7 @@ const data = [
     "Colombia" : 46,
     "Congo, Democratic Rep." : 121,
     "Costa Rica" : 32,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 102,
     "Cyprus" : 52,
     "Czech Republic" : 43,
@@ -10398,7 +10398,7 @@ const data = [
     "Colombia" : 90,
     "Congo, Democratic Rep." : 131,
     "Costa Rica" : 41,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 116,
     "Cyprus" : 33,
     "Czech Republic" : 106,
@@ -10555,7 +10555,7 @@ const data = [
     "Colombia" : 66,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 28,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 135,
     "Cyprus" : 49,
     "Czech Republic" : 34,
@@ -10712,7 +10712,7 @@ const data = [
     "Colombia" : 106,
     "Congo, Democratic Rep." : 42,
     "Costa Rica" : 59,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 131,
     "Cyprus" : 66,
     "Czech Republic" : 108,
@@ -10869,7 +10869,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : 49,
     "Costa Rica" : 83,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 66,
     "Cyprus" : 85,
     "Czech Republic" : 10,
@@ -11026,7 +11026,7 @@ const data = [
     "Colombia" : 118,
     "Congo, Democratic Rep." : 64,
     "Costa Rica" : 100,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 133,
     "Cyprus" : 25,
     "Czech Republic" : 113,
@@ -11183,7 +11183,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : 36,
     "Costa Rica" : 79,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 63,
     "Cyprus" : 13,
     "Czech Republic" : 86,
@@ -11340,7 +11340,7 @@ const data = [
     "Colombia" : 94,
     "Congo, Democratic Rep." : 135,
     "Costa Rica" : 41,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 101,
     "Cyprus" : 72,
     "Czech Republic" : 21,
@@ -11497,7 +11497,7 @@ const data = [
     "Colombia" : 86,
     "Congo, Democratic Rep." : 115,
     "Costa Rica" : 36,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 101,
     "Cyprus" : 97,
     "Czech Republic" : 26,
@@ -11654,7 +11654,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : 108,
     "Costa Rica" : 25,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 131,
     "Cyprus" : 56,
     "Czech Republic" : 51,
@@ -11811,7 +11811,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : 97,
     "Costa Rica" : 39,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 135,
     "Cyprus" : 72,
     "Czech Republic" : 74,
@@ -11968,7 +11968,7 @@ const data = [
     "Colombia" : 85,
     "Congo, Democratic Rep." : 6,
     "Costa Rica" : 106,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 50,
     "Cyprus" : 54,
     "Czech Republic" : 64,
@@ -12125,7 +12125,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : 132,
     "Costa Rica" : 80,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 110,
     "Cyprus" : 90,
     "Czech Republic" : 28,
@@ -12282,7 +12282,7 @@ const data = [
     "Colombia" : 99,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 70,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 105,
     "Cyprus" : 77,
     "Czech Republic" : 23,
@@ -12439,7 +12439,7 @@ const data = [
     "Colombia" : 77,
     "Congo, Democratic Rep." : 129,
     "Costa Rica" : 116,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 99,
     "Cyprus" : 120,
     "Czech Republic" : 63,
@@ -12596,7 +12596,7 @@ const data = [
     "Colombia" : 61,
     "Congo, Democratic Rep." : 126,
     "Costa Rica" : 92,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 97,
     "Cyprus" : 123,
     "Czech Republic" : 32,
@@ -12753,7 +12753,7 @@ const data = [
     "Colombia" : 73,
     "Congo, Democratic Rep." : 99,
     "Costa Rica" : 98,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 117,
     "Cyprus" : 110,
     "Czech Republic" : 36,
@@ -12910,7 +12910,7 @@ const data = [
     "Colombia" : 30,
     "Congo, Democratic Rep." : 130,
     "Costa Rica" : 25,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 127,
     "Czech Republic" : 12,
@@ -13067,7 +13067,7 @@ const data = [
     "Colombia" : 59,
     "Congo, Democratic Rep." : 123,
     "Costa Rica" : 39,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 77,
     "Cyprus" : 110,
     "Czech Republic" : 26,
@@ -13224,7 +13224,7 @@ const data = [
     "Colombia" : 1,
     "Congo, Democratic Rep." : 49,
     "Costa Rica" : 8,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 30,
     "Czech Republic" : 30,
@@ -13381,7 +13381,7 @@ const data = [
     "Colombia" : 85,
     "Congo, Democratic Rep." : 131,
     "Costa Rica" : 46,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 65,
     "Cyprus" : 66,
     "Czech Republic" : 32,
@@ -13538,7 +13538,7 @@ const data = [
     "Colombia" : 83,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 40,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : 63,
     "Czech Republic" : 33,
@@ -13695,7 +13695,7 @@ const data = [
     "Colombia" : 77,
     "Congo, Democratic Rep." : 124,
     "Costa Rica" : 19,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 111,
     "Cyprus" : 79,
     "Czech Republic" : 30,
@@ -13852,7 +13852,7 @@ const data = [
     "Colombia" : 72,
     "Congo, Democratic Rep." : 133,
     "Costa Rica" : 59,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 48,
     "Cyprus" : 41,
     "Czech Republic" : 37,
@@ -14009,7 +14009,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : 135,
     "Costa Rica" : 65,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 38,
     "Cyprus" : 16,
     "Czech Republic" : 32,
@@ -14166,7 +14166,7 @@ const data = [
     "Colombia" : 32,
     "Congo, Democratic Rep." : 137,
     "Costa Rica" : 60,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 38,
     "Cyprus" : 21,
     "Czech Republic" : 24,
@@ -14323,7 +14323,7 @@ const data = [
     "Colombia" : 92,
     "Congo, Democratic Rep." : 110,
     "Costa Rica" : 15,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 41,
     "Cyprus" : 23,
     "Czech Republic" : 46,
@@ -14480,7 +14480,7 @@ const data = [
     "Colombia" : 31,
     "Congo, Democratic Rep." : 88,
     "Costa Rica" : 81,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 75,
     "Cyprus" : 110,
     "Czech Republic" : 49,
@@ -14637,7 +14637,7 @@ const data = [
     "Colombia" : 124,
     "Congo, Democratic Rep." : 123,
     "Costa Rica" : 78,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 27,
     "Cyprus" : 24,
     "Czech Republic" : 8,
@@ -14794,7 +14794,7 @@ const data = [
     "Colombia" : 31,
     "Congo, Democratic Rep." : 88,
     "Costa Rica" : 83,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 80,
     "Cyprus" : 114,
     "Czech Republic" : 53,
@@ -14951,7 +14951,7 @@ const data = [
     "Colombia" : 56,
     "Congo, Democratic Rep." : 110,
     "Costa Rica" : 84,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 95,
     "Czech Republic" : 28,
@@ -15108,7 +15108,7 @@ const data = [
     "Colombia" : 23,
     "Congo, Democratic Rep." : 125,
     "Costa Rica" : 35,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 103,
     "Cyprus" : 33,
     "Czech Republic" : 20,
@@ -15265,7 +15265,7 @@ const data = [
     "Colombia" : 41,
     "Congo, Democratic Rep." : 125,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 50,
     "Cyprus" : 51,
     "Czech Republic" : 13,
@@ -15422,7 +15422,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : 111,
     "Costa Rica" : 45,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 130,
     "Cyprus" : 82,
     "Czech Republic" : 52,
@@ -15579,7 +15579,7 @@ const data = [
     "Colombia" : 73,
     "Congo, Democratic Rep." : 121,
     "Costa Rica" : 25,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 60,
     "Cyprus" : 38,
     "Czech Republic" : 53,
@@ -15736,7 +15736,7 @@ const data = [
     "Colombia" : 78,
     "Congo, Democratic Rep." : 131,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 74,
     "Cyprus" : 59,
     "Czech Republic" : 31,
@@ -15893,7 +15893,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : 134,
     "Costa Rica" : 82,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 70,
     "Cyprus" : 65,
     "Czech Republic" : 37,
@@ -16050,7 +16050,7 @@ const data = [
     "Colombia" : 78,
     "Congo, Democratic Rep." : 68,
     "Costa Rica" : 35,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 101,
     "Cyprus" : 83,
     "Czech Republic" : 43,
@@ -16207,7 +16207,7 @@ const data = [
     "Colombia" : 55,
     "Congo, Democratic Rep." : 133,
     "Costa Rica" : 35,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 76,
     "Cyprus" : 40,
     "Czech Republic" : 42,
@@ -16364,7 +16364,7 @@ const data = [
     "Colombia" : 89,
     "Congo, Democratic Rep." : 127,
     "Costa Rica" : 40,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 120,
     "Cyprus" : 110,
     "Czech Republic" : 27,
@@ -16521,7 +16521,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : 101,
     "Costa Rica" : 33,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 66,
     "Cyprus" : 50,
     "Czech Republic" : 27,
@@ -16678,7 +16678,7 @@ const data = [
     "Colombia" : 89,
     "Congo, Democratic Rep." : 118,
     "Costa Rica" : 50,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 97,
     "Cyprus" : 96,
     "Czech Republic" : 34,
@@ -16835,7 +16835,7 @@ const data = [
     "Colombia" : 53,
     "Congo, Democratic Rep." : 110,
     "Costa Rica" : 50,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 118,
     "Cyprus" : 72,
     "Czech Republic" : 41,
@@ -16992,7 +16992,7 @@ const data = [
     "Colombia" : 81,
     "Congo, Democratic Rep." : 128,
     "Costa Rica" : 115,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 134,
     "Cyprus" : 88,
     "Czech Republic" : 97,
@@ -17149,7 +17149,7 @@ const data = [
     "Colombia" : 72,
     "Congo, Democratic Rep." : 82,
     "Costa Rica" : 27,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 95,
     "Cyprus" : 33,
     "Czech Republic" : 73,
@@ -17306,7 +17306,7 @@ const data = [
     "Colombia" : 62,
     "Congo, Democratic Rep." : 119,
     "Costa Rica" : 56,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 42,
     "Cyprus" : 31,
     "Czech Republic" : 29,
@@ -171794,7 +171794,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 65,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 78,
     "Cyprus" : 36,
     "Czech Republic" : 66,
@@ -171951,7 +171951,7 @@ const data = [
     "Colombia" : 63,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 59,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 58,
     "Cyprus" : 39,
     "Czech Republic" : 51,
@@ -172108,7 +172108,7 @@ const data = [
     "Colombia" : 96,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 50,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 51,
     "Cyprus" : 32,
     "Czech Republic" : 89,
@@ -172265,7 +172265,7 @@ const data = [
     "Colombia" : 87,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 65,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 31,
     "Czech Republic" : 102,
@@ -172422,7 +172422,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 36,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 86,
     "Cyprus" : 33,
     "Czech Republic" : 57,
@@ -172579,7 +172579,7 @@ const data = [
     "Colombia" : 78,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 48,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 63,
     "Cyprus" : 51,
     "Czech Republic" : 93,
@@ -172736,7 +172736,7 @@ const data = [
     "Colombia" : 66,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 69,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 75,
     "Cyprus" : 30,
     "Czech Republic" : 110,
@@ -172893,7 +172893,7 @@ const data = [
     "Colombia" : 111,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 93,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : 27,
     "Czech Republic" : 122,
@@ -173050,7 +173050,7 @@ const data = [
     "Colombia" : 51,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 83,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 80,
     "Cyprus" : 44,
     "Czech Republic" : 95,
@@ -173207,7 +173207,7 @@ const data = [
     "Colombia" : 129,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 19,
     "Cyprus" : 50,
     "Czech Republic" : 16,
@@ -173364,7 +173364,7 @@ const data = [
     "Colombia" : 112,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 108,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 62,
     "Cyprus" : 23,
     "Czech Republic" : 42,
@@ -173521,7 +173521,7 @@ const data = [
     "Colombia" : 126,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 72,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 79,
     "Cyprus" : 33,
     "Czech Republic" : 47,
@@ -173678,7 +173678,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 79,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 63,
     "Cyprus" : 35,
     "Czech Republic" : 87,
@@ -173835,7 +173835,7 @@ const data = [
     "Colombia" : 47,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 80,
     "Cyprus" : 49,
     "Czech Republic" : 83,
@@ -173992,7 +173992,7 @@ const data = [
     "Colombia" : 73,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 67,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 61,
     "Cyprus" : 29,
     "Czech Republic" : 59,
@@ -174149,7 +174149,7 @@ const data = [
     "Colombia" : 45,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 85,
     "Cyprus" : 121,
     "Czech Republic" : 34,
@@ -174306,7 +174306,7 @@ const data = [
     "Colombia" : 62,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 65,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 87,
     "Cyprus" : 44,
     "Czech Republic" : 84,
@@ -174463,7 +174463,7 @@ const data = [
     "Colombia" : 25,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 113,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 113,
     "Cyprus" : null,
     "Czech Republic" : 65,
@@ -174620,7 +174620,7 @@ const data = [
     "Colombia" : 89,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 110,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 53,
     "Cyprus" : 27,
     "Czech Republic" : 48,
@@ -174777,7 +174777,7 @@ const data = [
     "Colombia" : 94,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 121,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 36,
     "Cyprus" : 23,
     "Czech Republic" : 68,
@@ -174934,7 +174934,7 @@ const data = [
     "Colombia" : 108,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 125,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 89,
     "Cyprus" : 39,
     "Czech Republic" : 53,
@@ -175091,7 +175091,7 @@ const data = [
     "Colombia" : 62,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 66,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 75,
     "Cyprus" : 55,
     "Czech Republic" : 48,
@@ -175248,7 +175248,7 @@ const data = [
     "Colombia" : 44,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 70,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 89,
     "Cyprus" : 66,
     "Czech Republic" : 56,
@@ -175405,7 +175405,7 @@ const data = [
     "Colombia" : 67,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 40,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 43,
     "Cyprus" : 25,
     "Czech Republic" : 21,
@@ -175562,7 +175562,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 31,
     "Cyprus" : 15,
     "Czech Republic" : 39,
@@ -175719,7 +175719,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 91,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 40,
     "Cyprus" : 34,
     "Czech Republic" : 5,
@@ -175876,7 +175876,7 @@ const data = [
     "Colombia" : 63,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 62,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 98,
     "Cyprus" : 73,
     "Czech Republic" : 97,
@@ -176033,7 +176033,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 75,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 46,
     "Cyprus" : 94,
     "Czech Republic" : 62,
@@ -176190,7 +176190,7 @@ const data = [
     "Colombia" : 63,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 121,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 43,
     "Cyprus" : 29,
     "Czech Republic" : 29,
@@ -176347,7 +176347,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 78,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 58,
     "Cyprus" : 98,
     "Czech Republic" : 41,
@@ -176504,7 +176504,7 @@ const data = [
     "Colombia" : 62,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 65,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 30,
     "Cyprus" : 28,
     "Czech Republic" : 10,
@@ -176661,7 +176661,7 @@ const data = [
     "Colombia" : 106,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 87,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 1,
     "Cyprus" : 1,
     "Czech Republic" : 1,
@@ -176818,7 +176818,7 @@ const data = [
     "Colombia" : 53,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 48,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 26,
     "Cyprus" : 15,
     "Czech Republic" : 33,
@@ -176975,7 +176975,7 @@ const data = [
     "Colombia" : 61,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 30,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 56,
     "Cyprus" : 2,
     "Czech Republic" : 21,
@@ -177132,7 +177132,7 @@ const data = [
     "Colombia" : 76,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 77,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 19,
     "Cyprus" : 24,
     "Czech Republic" : 44,
@@ -177289,7 +177289,7 @@ const data = [
     "Colombia" : 84,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 64,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 1,
     "Cyprus" : null,
     "Czech Republic" : 25,
@@ -177446,7 +177446,7 @@ const data = [
     "Colombia" : 67,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 51,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 32,
     "Cyprus" : 7,
     "Czech Republic" : 7,
@@ -177603,7 +177603,7 @@ const data = [
     "Colombia" : 51,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 31,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 40,
     "Cyprus" : 15,
     "Czech Republic" : 37,
@@ -177760,7 +177760,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 57,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 34,
     "Cyprus" : 26,
     "Czech Republic" : 11,
@@ -177917,7 +177917,7 @@ const data = [
     "Colombia" : 95,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 75,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : 5,
     "Czech Republic" : 67,
@@ -178074,7 +178074,7 @@ const data = [
     "Colombia" : 83,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 82,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 57,
     "Cyprus" : 33,
     "Czech Republic" : 39,
@@ -178231,7 +178231,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 71,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 51,
     "Cyprus" : 55,
     "Czech Republic" : 39,
@@ -178388,7 +178388,7 @@ const data = [
     "Colombia" : 59,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 36,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 61,
     "Cyprus" : 23,
     "Czech Republic" : 33,
@@ -178545,7 +178545,7 @@ const data = [
     "Colombia" : 81,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 68,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 28,
     "Cyprus" : 19,
     "Czech Republic" : 9,
@@ -178702,7 +178702,7 @@ const data = [
     "Colombia" : 46,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 27,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 71,
     "Cyprus" : 53,
     "Czech Republic" : 38,
@@ -178859,7 +178859,7 @@ const data = [
     "Colombia" : 76,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 74,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 42,
     "Cyprus" : 43,
     "Czech Republic" : 23,
@@ -179016,7 +179016,7 @@ const data = [
     "Colombia" : 71,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 36,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 38,
     "Cyprus" : 70,
     "Czech Republic" : 25,
@@ -179173,7 +179173,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 27,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 60,
     "Cyprus" : 72,
     "Czech Republic" : 35,
@@ -179330,7 +179330,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 50,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 63,
     "Cyprus" : 36,
     "Czech Republic" : 17,
@@ -179487,7 +179487,7 @@ const data = [
     "Colombia" : 98,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 32,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 77,
     "Cyprus" : 43,
     "Czech Republic" : 34,
@@ -179644,7 +179644,7 @@ const data = [
     "Colombia" : 60,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 59,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 33,
     "Czech Republic" : 35,
@@ -179801,7 +179801,7 @@ const data = [
     "Colombia" : 101,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 85,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 65,
     "Cyprus" : null,
     "Czech Republic" : 65,
@@ -179958,7 +179958,7 @@ const data = [
     "Colombia" : 89,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 113,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 91,
     "Cyprus" : null,
     "Czech Republic" : 39,
@@ -180115,7 +180115,7 @@ const data = [
     "Colombia" : 82,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 32,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 119,
     "Cyprus" : 66,
     "Czech Republic" : 57,
@@ -180272,7 +180272,7 @@ const data = [
     "Colombia" : 117,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 118,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 34,
     "Cyprus" : null,
     "Czech Republic" : 75,
@@ -180429,7 +180429,7 @@ const data = [
     "Colombia" : 100,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 96,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 50,
     "Cyprus" : 28,
     "Czech Republic" : 15,
@@ -180586,7 +180586,7 @@ const data = [
     "Colombia" : 75,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 15,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 82,
     "Cyprus" : 77,
     "Czech Republic" : 30,
@@ -180743,7 +180743,7 @@ const data = [
     "Colombia" : 70,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 30,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 102,
     "Cyprus" : 56,
     "Czech Republic" : 26,
@@ -180900,7 +180900,7 @@ const data = [
     "Colombia" : 77,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 86,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 51,
     "Cyprus" : 32,
     "Czech Republic" : 39,
@@ -181057,7 +181057,7 @@ const data = [
     "Colombia" : 121,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 41,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 47,
     "Cyprus" : 48,
     "Czech Republic" : 20,
@@ -181214,7 +181214,7 @@ const data = [
     "Colombia" : 97,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 43,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 52,
     "Cyprus" : 13,
     "Czech Republic" : 13,
@@ -181371,7 +181371,7 @@ const data = [
     "Colombia" : 43,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 39,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 76,
     "Cyprus" : 42,
     "Czech Republic" : 53,
@@ -181528,7 +181528,7 @@ const data = [
     "Colombia" : 72,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 35,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 38,
     "Czech Republic" : 46,
@@ -181685,7 +181685,7 @@ const data = [
     "Colombia" : 42,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 9,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 113,
     "Cyprus" : 41,
     "Czech Republic" : 60,
@@ -181842,7 +181842,7 @@ const data = [
     "Colombia" : 64,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 29,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 74,
     "Cyprus" : 96,
     "Czech Republic" : 104,
@@ -181999,7 +181999,7 @@ const data = [
     "Colombia" : 59,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 78,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 69,
     "Cyprus" : 112,
     "Czech Republic" : 22,
@@ -182156,7 +182156,7 @@ const data = [
     "Colombia" : 88,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 62,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 67,
     "Cyprus" : null,
     "Czech Republic" : 32,
@@ -182313,7 +182313,7 @@ const data = [
     "Colombia" : 78,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 52,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 37,
     "Cyprus" : 86,
     "Czech Republic" : 17,
@@ -182470,7 +182470,7 @@ const data = [
     "Colombia" : 55,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 44,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 76,
     "Cyprus" : 121,
     "Czech Republic" : 32,
@@ -182627,7 +182627,7 @@ const data = [
     "Colombia" : 58,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 2,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 48,
     "Cyprus" : 53,
     "Czech Republic" : 43,
@@ -182784,7 +182784,7 @@ const data = [
     "Colombia" : 69,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 94,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 67,
     "Cyprus" : 74,
     "Czech Republic" : 71,
@@ -182941,7 +182941,7 @@ const data = [
     "Colombia" : 73,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 79,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 59,
     "Cyprus" : 30,
     "Czech Republic" : 65,
@@ -183098,7 +183098,7 @@ const data = [
     "Colombia" : 77,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 87,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 73,
     "Cyprus" : 44,
     "Czech Republic" : 67,
@@ -183255,7 +183255,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 49,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 59,
     "Cyprus" : 47,
     "Czech Republic" : 63,
@@ -183412,7 +183412,7 @@ const data = [
     "Colombia" : 53,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 51,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 70,
     "Cyprus" : 66,
     "Czech Republic" : 56,
@@ -183569,7 +183569,7 @@ const data = [
     "Colombia" : 94,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 69,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 47,
     "Cyprus" : null,
     "Czech Republic" : 27,
@@ -183726,7 +183726,7 @@ const data = [
     "Colombia" : 88,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 72,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 76,
     "Cyprus" : 49,
     "Czech Republic" : 44,
@@ -183883,7 +183883,7 @@ const data = [
     "Colombia" : 96,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 56,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 93,
     "Cyprus" : 65,
     "Czech Republic" : 35,
@@ -184040,7 +184040,7 @@ const data = [
     "Colombia" : 66,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 7,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 114,
     "Cyprus" : 82,
     "Czech Republic" : 9,
@@ -184197,7 +184197,7 @@ const data = [
     "Colombia" : 74,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 49,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 35,
     "Cyprus" : 30,
     "Czech Republic" : 42,
@@ -184354,7 +184354,7 @@ const data = [
     "Colombia" : 27,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 74,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 68,
     "Cyprus" : 102,
     "Czech Republic" : 41,
@@ -184511,7 +184511,7 @@ const data = [
     "Colombia" : 110,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 44,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 57,
     "Cyprus" : 53,
     "Czech Republic" : 18,
@@ -184668,7 +184668,7 @@ const data = [
     "Colombia" : 26,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 73,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 66,
     "Cyprus" : 99,
     "Czech Republic" : 41,
@@ -184825,7 +184825,7 @@ const data = [
     "Colombia" : 46,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 72,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 71,
     "Cyprus" : 94,
     "Czech Republic" : 29,
@@ -184982,7 +184982,7 @@ const data = [
     "Colombia" : 54,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 40,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 82,
     "Cyprus" : 77,
     "Czech Republic" : 17,
@@ -185139,7 +185139,7 @@ const data = [
     "Colombia" : 48,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 35,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 72,
     "Cyprus" : 46,
     "Czech Republic" : 26,
@@ -185296,7 +185296,7 @@ const data = [
     "Colombia" : 79,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 69,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 65,
     "Cyprus" : 48,
     "Czech Republic" : 32,
@@ -185453,7 +185453,7 @@ const data = [
     "Colombia" : 61,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 29,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 39,
     "Cyprus" : 28,
     "Czech Republic" : 58,
@@ -185610,7 +185610,7 @@ const data = [
     "Colombia" : 78,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 40,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 61,
     "Cyprus" : 55,
     "Czech Republic" : 28,
@@ -185767,7 +185767,7 @@ const data = [
     "Colombia" : 67,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 27,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 50,
     "Cyprus" : 77,
     "Czech Republic" : 40,
@@ -185924,7 +185924,7 @@ const data = [
     "Colombia" : 85,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 81,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 48,
     "Cyprus" : 36,
     "Czech Republic" : 94,
@@ -186081,7 +186081,7 @@ const data = [
     "Colombia" : 60,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 43,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 55,
     "Cyprus" : 49,
     "Czech Republic" : 34,
@@ -186238,7 +186238,7 @@ const data = [
     "Colombia" : 63,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 31,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 64,
     "Cyprus" : 45,
     "Czech Republic" : 25,
@@ -186395,7 +186395,7 @@ const data = [
     "Colombia" : 65,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 37,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 48,
     "Cyprus" : 70,
     "Czech Republic" : 25,
@@ -186552,7 +186552,7 @@ const data = [
     "Colombia" : 88,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 34,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 54,
     "Cyprus" : 77,
     "Czech Republic" : 30,
@@ -186709,7 +186709,7 @@ const data = [
     "Colombia" : 76,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 30,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 47,
     "Cyprus" : 82,
     "Czech Republic" : 29,
@@ -186866,7 +186866,7 @@ const data = [
     "Colombia" : 52,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 35,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 38,
     "Cyprus" : 75,
     "Czech Republic" : 27,
@@ -187023,7 +187023,7 @@ const data = [
     "Colombia" : 68,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 61,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 80,
     "Cyprus" : 78,
     "Czech Republic" : 46,
@@ -187180,7 +187180,7 @@ const data = [
     "Colombia" : 83,
     "Congo, Democratic Rep." : null,
     "Costa Rica" : 39,
-    "Côte d'Ivoire" : null,
+    
     "Croatia" : 46,
     "Cyprus" : 33,
     "Czech Republic" : 5,

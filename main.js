@@ -1,9 +1,9 @@
-const width = 800;
+const width = 1000;
 const height = 100;
 const domain_end = 160;
 const axis = { grid: false, title: false, ticks: false, tickCount: 1, labelExpr: "'อันดับดี'", labelPadding: 10 };
 
-let histogram = (country, color, year) => ({
+let histogram = (country, color, year, max_y=20) => ({
     "transform": [ { "filter": { "field": "year", "equal": year } } ],
     "mark": {
       type: "area",
@@ -35,7 +35,7 @@ let histogram = (country, color, year) => ({
       "y": {
         "aggregate": "count",
         "type": "quantitative",
-        "scale": { "domain": [0, 30] },
+        "scale": { "domain": [0, max_y] },
         "axis": null
       }
     }
@@ -94,6 +94,21 @@ let subtitle = (text) => ({
       "text": { "value": text }
     }
   })
+let histograms = (country, colors, text, max_y) => ([
+    histogram(country, colors[0], "2007-2008", max_y),
+    mean(country, colors[0], "2007-2008"),
+    mean_text(country, colors[0], "2007-2008", "2551"),
+
+    histogram(country, colors[1], "2012-2013", max_y),
+    mean(country, colors[1], "2012-2013"),
+    mean_text(country, colors[1], "2012-2013", "2556"),
+
+    histogram(country, colors[2], "2017-2018", max_y),
+    mean(country, colors[2], "2017-2018"),
+    mean_text(country, colors[2], "2017-2018", "2561"),
+
+    subtitle(text)
+  ])
 
 let spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
@@ -105,6 +120,11 @@ let spec = {
   },
   "data": { name: "table", values: data },
   "vconcat": [
+    {
+      "width": width,
+      "height": height,
+      "layer": []
+    },
     {
       "width": width,
       "height": height,
@@ -121,33 +141,77 @@ let spec = {
         histogram("Malaysia", "red", "2017-2018"),
         mean("Malaysia", "red", "2017-2018"),
         mean_text("Malaysia", "red", "2017-2018", "มาเลเซีย"),
+
         subtitle("2561")
       ]
     },
     {
       "width": width,
       "height": height,
+      "layer": histograms("Viet Nam", ["Khaki", "DarkKhaki", "gold"], "เวียดนาม")
+    },
+    {
+      "width": width,
+      "height": height,
+      "layer": histograms("Malaysia", ["lightsalmon", "indianred", "red"], "มาเลเซีย")
+    },
+    {
+      "width": width,
+      "height": height,
       "layer": [
-        // histogram("Thailand", "blue", "2016-2017"),
-        // histogram("Thailand", "blue", "2015-2016"),
-        // histogram("Thailand", "blue", "2014-2015"),
-        // histogram("Thailand", "blue", "2013-2014"),
-        // histogram("Thailand", "blue", "2012-2013"),
-        // histogram("Thailand", "blue", "2011-2012"),
-        // histogram("Thailand", "blue", "2010-2011"),
-        // histogram("Thailand", "blue", "2009-2010"),
-        // histogram("Thailand", "blue", "2008-2009"),
-        histogram("Thailand", "lightblue", "2007-2008"),
-        mean("Thailand", "lightblue", "2007-2008"),
-        mean_text("Thailand", "lightblue", "2007-2008", "2551"),
-        histogram("Thailand", "blue", "2017-2018"),
-        mean("Thailand", "blue", "2017-2018"),
-        mean_text("Thailand", "blue", "2017-2018", "2561"),
+        histogram("Thailand", "gainsboro", "2017-2018"),
+        histogram("Thailand", "gainsboro", "2016-2017"),
+        histogram("Thailand", "gainsboro", "2015-2016"),
+        histogram("Thailand", "gainsboro", "2014-2015"),
+        histogram("Thailand", "gainsboro", "2013-2014"),
+        histogram("Thailand", "gainsboro", "2012-2013"),
+        histogram("Thailand", "gainsboro", "2011-2012"),
+        histogram("Thailand", "gainsboro", "2010-2011"),
+        histogram("Thailand", "gainsboro", "2009-2010"),
+        histogram("Thailand", "gainsboro", "2008-2009"),
+        histogram("Thailand", "gainsboro", "2007-2008"),
+
         subtitle("ไทย")
       ]
+    },
+    {
+      "width": width,
+      "height": height,
+      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย")
+    },
+    {
+      "width": width,
+      "height": height,
+      "transform": [ { "filter": { "field": "code", "range": [1, 5] } } ],
+      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 1: Enabling Environment)", 5)
+    },
+    {
+      "width": width,
+      "height": height,
+      "transform": [ { "filter": { "field": "code", "range": [5, 7] } } ],
+      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 2: Human Capital)", 5)
+    },
+    {
+      "width": width,
+      "height": height,
+      "transform": [ { "filter": { "field": "code", "range": [7, 11] } } ],
+      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 3: Markets)", 5)
+    },
+    {
+      "width": width,
+      "height": height,
+      "transform": [ { "filter": { "field": "code", "range": [11, 13] } } ],
+      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 4: Innovation)", 5)
     }
   ],
 };
+
+const countries = Object.keys(data[0]).filter(c => c !== "year" && c !== "code" && c !== "name")
+countries.forEach(c => {
+  spec.vconcat[0].layer.push(histogram(c, "gainsboro", "2017-2018"));
+});
+spec.vconcat[0].layer.push(subtitle("ทั่วโลก"));
+
 let opt = { 
   actions: {
     export: true,
