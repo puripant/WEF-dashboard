@@ -1,11 +1,16 @@
 const width = 1000;
 const height = 100;
-const domain_end = 160;
+const domain_end = 140;
 const axis = { grid: false, title: false, ticks: false, tickCount: 1, labelExpr: "'อันดับดี'", labelPadding: 10 };
+const colors = {
+  ไทย: { transparent: ["lightblue", "cornflowerblue", "blue"], opaque: "rgb(178,178,255)" },
+  เวียดนาม: { transparent: ["mediumseagreen", "seagreen", "green"], opaque: "rgb(178,217,178)" },
+  มาเลเซีย: { transparent: ["lightsalmon", "indianred", "red"], opaque: "rgb(255,178,178)" },
+}
 
 let histogram = (country, color, year, max_y=20) => ({
-    "transform": [ { "filter": { "field": "year", "equal": year } } ],
-    "mark": {
+    transform: [ { filter: { field: "year", equal: year } } ],
+    mark: {
       type: "area",
       interpolate: "basis", //"cardinal", //"monotone",
       // type: "bar",
@@ -14,151 +19,182 @@ let histogram = (country, color, year, max_y=20) => ({
       color: color
       // line: { color: color},
       // color: {
-      //   "x1": 1, "y1": 1, "x2": 1, "y2": 0,
-      //   "gradient": "linear",
-      //   "stops": [
-      //     { "offset": 0, "color": "white" },
-      //     { "offset": 1, "color": color }
+      //   x1: 1, y1: 1, x2: 1, y2: 0,
+      //   gradient: "linear",
+      //   stops: [
+      //     { offset: 0, color: "white" },
+      //     { offset: 1, color: color }
       //   ]
       // }
     },
-    "encoding": {
-      "x": {
-        "field": country,
-        "bin": { "step": 5 },
-        "type": "quantitative",
-        // "sort": "descending",
-        "scale": { "domain": [0, domain_end] },
-        // "axis": null,
-        "axis": axis
+    encoding: {
+      x: {
+        field: country,
+        bin: { step: 5 },
+        type: "quantitative",
+        // sort: "descending",
+        scale: { domain: [0, domain_end] },
+        // axis: null,
+        axis: axis
       },
-      "y": {
-        "aggregate": "count",
-        "type": "quantitative",
-        "scale": { "domain": [0, max_y] },
-        "axis": null
+      y: {
+        aggregate: "count",
+        type: "quantitative",
+        scale: { domain: [0, max_y] },
+        axis: null
       }
     }
   });
 let mean = (country, color, year) => ({
-    "transform": [ { "filter": { "field": "year", "equal": year } } ],
-    "mark": "rule",
-    "encoding": {
-      "x": {
-        "field": country,
-        "aggregate": "mean",
-        "type": "quantitative",
-        // "sort": "descending",
-        "scale": { "domain": [0, domain_end] },
-        // "axis": null
-        "axis": axis
-      },
-      "color": { "value": color},
-      "size": { "value": 2}
-    }
-  });
-let mean_text = (country, color, year, text) => ({
-    "transform": [ { "filter": { "field": "year", "equal": year } } ],
-    "mark": {
-      type: "text",
-      "baseline": "top",
-      "align": "left",
-      "dx": 5
+    transform: [ { filter: { field: "year", equal: year } } ],
+    mark: {
+      type: "rule",
+      opacity: 0.3,
     },
-    "encoding": {
-      "x": {
-        "field": country,
-        "aggregate": "mean",
-        "type": "quantitative",
-        // "sort": "descending",
-        "scale": { "domain": [0, domain_end] },
-        // "axis": null
-        "axis": axis
+    encoding: {
+      x: {
+        field: country,
+        aggregate: "mean",
+        type: "quantitative",
+        // sort: "descending",
+        scale: { domain: [0, domain_end] },
+        // axis: null
+        axis: axis
       },
-      "y": { "value": 0 },
-      "color": {"value": color},
-      "text": {"value": text }
+      color: { value: color},
+      size: { value: 2}
     }
   });
-let subtitle = (text) => ({
-    "mark": {
+let mean_rect = (country, color, year) => ({
+  transform: [ { filter: { field: "year", equal: year } } ],
+  mark: {
+    type: "bar",
+    baseline: "top",
+    align: "left",
+    // opacity: 0.3,
+  },
+  encoding: {
+    x: {
+      field: country,
+      aggregate: "mean",
+      type: "quantitative",
+      scale: { domain: [0, domain_end] },
+      axis: axis
+    },
+    x2: { value: 500 },
+    y: { value: 0 },
+    y2: { value: 10 },
+    color: { value: color }
+  }
+});
+let mean_text = (country, year, text) => ({
+    transform: [ { filter: { field: "year", equal: year } } ],
+    mark: {
       type: "text",
       baseline: "top",
       align: "left",
       dx: 5
     },
-    "encoding": {
-      "x": { "value": 0 },
-      "y": { "value": 0 },
-      "color": { "value": "black" },
-      "text": { "value": text }
+    encoding: {
+      x: {
+        field: country,
+        aggregate: "mean",
+        type: "quantitative",
+        // sort: "descending",
+        scale: { domain: [0, domain_end] },
+        // axis: null
+        axis: axis
+      },
+      y: { value: 0 },
+      color: { value: "white" }, //{value: color},
+      text: { value: text }
+    }
+  });
+let subtitle = (text) => ({
+    mark: {
+      type: "text",
+      baseline: "top",
+      align: "left",
+      dx: 5
+    },
+    encoding: {
+      x: { value: 0 },
+      y: { value: 0 },
+      color: { value: "black" },
+      text: { value: text }
     }
   })
 let histograms = (country, colors, text, max_y) => ([
-    histogram(country, colors[0], "2007-2008", max_y),
-    mean(country, colors[0], "2007-2008"),
-    mean_text(country, colors[0], "2007-2008", "2551"),
+    histogram(country, colors["transparent"][0], "2007-2008", max_y),
+    mean(country, colors["transparent"][0], "2007-2008"),
+    mean_rect(country, colors["opaque"], "2007-2008"),
+    mean_text(country, "2007-2008", "2551"),
 
-    histogram(country, colors[1], "2012-2013", max_y),
-    mean(country, colors[1], "2012-2013"),
-    mean_text(country, colors[1], "2012-2013", "2556"),
+    histogram(country, colors["transparent"][1], "2012-2013", max_y),
+    mean(country, colors["transparent"][1], "2012-2013"),
+    mean_rect(country, colors["opaque"], "2012-2013"),
+    mean_text(country, "2012-2013", "2556"),
 
-    histogram(country, colors[2], "2017-2018", max_y),
-    mean(country, colors[2], "2017-2018"),
-    mean_text(country, colors[2], "2017-2018", "2561"),
+    histogram(country, colors["transparent"][2], "2017-2018", max_y),
+    mean(country, colors["transparent"][2], "2017-2018"),
+    mean_rect(country, colors["opaque"], "2017-2018"),
+    mean_text(country, "2017-2018", "2561"),
 
     subtitle(text)
   ])
 
 let spec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
-  "description": "Yet another visual display to present indicators across countries and time frames",
-  "config": {
-    "style": { "cell": { "stroke": "transparent" } },
-    "axis": { "labelFont": "Noto Sans Thai UI", "titleFont": "Noto Sans Thai UI", "titlePadding": 15 },
-    "text": { "font": "Noto Sans Thai UI" }
+  $schema: "https://vega.github.io/schema/vega-lite/v3.json",
+  description: "Yet another visual display to present indicators across countries and time frames",
+  config: {
+    style: { cell: { stroke: "transparent" } },
+    axis: { labelFont: "Noto Sans Thai UI", titleFont: "Noto Sans Thai UI", titlePadding: 15 },
+    text: { font: "Noto Sans Thai UI" }
   },
-  "data": { name: "table", values: data },
-  "vconcat": [
+  data: { name: "table", values: data },
+  vconcat: [
     {
-      "width": width,
-      "height": height,
-      "layer": []
+      width: width,
+      height: height,
+      layer: []
     },
     {
-      "width": width,
-      "height": height,
-      // "transform": [ { "filter": { "field": "year", "equal": "2017-2018" } } ],
-      "layer": [
-        histogram("Viet Nam", "gold", "2017-2018"),
-        mean("Viet Nam", "gold", "2017-2018"),
-        mean_text("Viet Nam", "gold", "2017-2018", "เวียดนาม"),
+      width: width,
+      height: height,
+      // transform: [ { filter: { field: "year", equal: "2017-2018" } } ],
+      layer: [
+        histogram("Viet Nam", colors["เวียดนาม"]["transparent"][2], "2017-2018"),
+        mean("Viet Nam", colors["เวียดนาม"]["transparent"][2], "2017-2018"),
+        mean_rect("Viet Nam", colors["เวียดนาม"]["opaque"], "2017-2018"),
+        mean_text("Viet Nam", "2017-2018", "เวียดนาม"),
 
-        histogram("Thailand", "blue", "2017-2018"),
-        mean("Thailand", "blue", "2017-2018"),
-        mean_text("Thailand", "blue", "2017-2018", "ไทย"),
+        histogram("Thailand", colors["ไทย"]["transparent"][2], "2017-2018"),
+        mean("Thailand", colors["ไทย"]["transparent"][2], "2017-2018"),
+        mean_rect("Thailand", colors["ไทย"]["opaque"], "2017-2018"),
+        mean_text("Thailand", "2017-2018", "ไทย"),
 
-        histogram("Malaysia", "red", "2017-2018"),
-        mean("Malaysia", "red", "2017-2018"),
-        mean_text("Malaysia", "red", "2017-2018", "มาเลเซีย"),
+        histogram("Malaysia", colors["มาเลเซีย"]["transparent"][2], "2017-2018"),
+        mean("Malaysia", colors["มาเลเซีย"]["transparent"][2], "2017-2018"),
+        mean_rect("Malaysia", colors["มาเลเซีย"]["opaque"], "2017-2018"),
+        mean_text("Malaysia", "2017-2018", "มาเลเซีย"),
 
         subtitle("2561")
       ]
     },
     {
-      "width": width,
-      "height": height,
-      "layer": histograms("Viet Nam", ["Khaki", "DarkKhaki", "gold"], "เวียดนาม")
+      width: width,
+      height: height,
+      layer: histograms("Viet Nam", colors["เวียดนาม"], "เวียดนาม")
     },
     {
-      "width": width,
-      "height": height,
-      "layer": histograms("Malaysia", ["lightsalmon", "indianred", "red"], "มาเลเซีย")
+      width: width,
+      height: height,
+      layer: histograms("Malaysia", colors["มาเลเซีย"], "มาเลเซีย")
     },
     {
-      "width": width,
-      "height": height,
-      "layer": [
+      width: width,
+      height: height,
+      layer: [
         histogram("Thailand", "gainsboro", "2017-2018"),
         histogram("Thailand", "gainsboro", "2016-2017"),
         histogram("Thailand", "gainsboro", "2015-2016"),
@@ -175,33 +211,33 @@ let spec = {
       ]
     },
     {
-      "width": width,
-      "height": height,
-      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย")
+      width: width,
+      height: height,
+      layer: histograms("Thailand", colors["ไทย"], "ไทย")
     },
     {
-      "width": width,
-      "height": height,
-      "transform": [ { "filter": { "field": "code", "range": [1, 5] } } ],
-      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 1: Enabling Environment)", 5)
+      width: width,
+      height: height,
+      transform: [ { filter: { field: "code", range: [1, 5] } } ],
+      layer: histograms("Thailand", colors["ไทย"], "ไทย (มิติที่ 1: Enabling Environment)", 5)
     },
     {
-      "width": width,
-      "height": height,
-      "transform": [ { "filter": { "field": "code", "range": [5, 7] } } ],
-      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 2: Human Capital)", 5)
+      width: width,
+      height: height,
+      transform: [ { filter: { field: "code", range: [5, 7] } } ],
+      layer: histograms("Thailand", colors["ไทย"], "ไทย (มิติที่ 2: Human Capital)", 5)
     },
     {
-      "width": width,
-      "height": height,
-      "transform": [ { "filter": { "field": "code", "range": [7, 11] } } ],
-      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 3: Markets)", 5)
+      width: width,
+      height: height,
+      transform: [ { filter: { field: "code", range: [7, 11] } } ],
+      layer: histograms("Thailand", colors["ไทย"], "ไทย (มิติที่ 3: Markets)", 5)
     },
     {
-      "width": width,
-      "height": height,
-      "transform": [ { "filter": { "field": "code", "range": [11, 13] } } ],
-      "layer": histograms("Thailand", ["lightblue", "cornflowerblue", "blue"], "ไทย (มิติที่ 4: Innovation)", 5)
+      width: width,
+      height: height,
+      transform: [ { filter: { field: "code", range: [11, 13] } } ],
+      layer: histograms("Thailand", colors["ไทย"], "ไทย (มิติที่ 4: Innovation)", 5)
     }
   ],
 };
@@ -223,7 +259,7 @@ let opt = {
     PNG_ACTION: "บันทึกเป็น PNG",
     SVG_ACTION: "บันทึกเป็น SVG"
   },
-  renderer: "canvas",
+  renderer: "svg",
   scaleFactor: 2,
   downloadFileName: "wef"
 };

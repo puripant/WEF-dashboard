@@ -1,9 +1,9 @@
 @import url(webfonts/stylesheet.css);
 
 body {
-  font: normal 14px 'Noto Sans Thai UI', sans-serif;
+  font: normal 14px 'Noto Sans Thai UI', 'Noto Sans', sans-serif;
   color: black;
   background-color: white;
-  width: 900px;
+  width: 1000px;
   margin: 10px auto;
 }
