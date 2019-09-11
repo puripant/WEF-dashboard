@@ -78,13 +78,14 @@ let mean = (country, color, year) => ({
       size: { value: 2}
     }
   });
-let mean_rect = (country, color, year) => ({
+let mean_rect = (country, color, year, offset) => ({
   transform: [ { filter: { field: "year", equal: year } } ],
   mark: {
     type: "bar",
     baseline: "top",
     align: "left",
     // opacity: opacity,
+    x2Offset: offset
   },
   encoding: {
     x: {
@@ -94,7 +95,13 @@ let mean_rect = (country, color, year) => ({
       scale: { domain: [0, domain_end] },
       axis: axis
     },
-    x2: { value: 500 },
+    x2: { 
+      field: country,
+      aggregate: "mean",
+      type: "quantitative",
+      scale: { domain: [0, domain_end] },
+      axis: axis
+    },
     y: { value: 0 },
     y2: { value: 10 },
     color: { value: color }
@@ -140,17 +147,17 @@ let subtitle = (text) => ({
 let histograms = (country, colors, text, max_y) => ([
     histogram(country, colors["transparent"][0], "2007-2008", max_y),
     mean(country, colors["transparent"][0], "2007-2008"),
-    mean_rect(country, colors["opaque"][0], "2007-2008"),
+    mean_rect(country, colors["opaque"][0], "2007-2008", 40),
     mean_text(country, "2007-2008", "2551"),
 
     histogram(country, colors["transparent"][1], "2012-2013", max_y),
     mean(country, colors["transparent"][1], "2012-2013"),
-    mean_rect(country, colors["opaque"][1], "2012-2013"),
+    mean_rect(country, colors["opaque"][1], "2012-2013", 40),
     mean_text(country, "2012-2013", "2556"),
 
     histogram(country, colors["transparent"][2], "2017-2018", max_y),
     mean(country, colors["transparent"][2], "2017-2018"),
-    mean_rect(country, colors["opaque"][2], "2017-2018"),
+    mean_rect(country, colors["opaque"][2], "2017-2018", 40),
     mean_text(country, "2017-2018", "2561"),
 
     subtitle(text)
@@ -178,17 +185,17 @@ let spec = {
       layer: [
         histogram("Viet Nam", colors["เวียดนาม"]["transparent"][2], "2017-2018"),
         mean("Viet Nam", colors["เวียดนาม"]["transparent"][2], "2017-2018"),
-        mean_rect("Viet Nam", colors["เวียดนาม"]["opaque"][2], "2017-2018"),
+        mean_rect("Viet Nam", colors["เวียดนาม"]["opaque"][2], "2017-2018", 50),
         mean_text("Viet Nam", "2017-2018", "เวียดนาม"),
 
         histogram("Thailand", colors["ไทย"]["transparent"][2], "2017-2018"),
         mean("Thailand", colors["ไทย"]["transparent"][2], "2017-2018"),
-        mean_rect("Thailand", colors["ไทย"]["opaque"][2], "2017-2018"),
+        mean_rect("Thailand", colors["ไทย"]["opaque"][2], "2017-2018", 50),
         mean_text("Thailand", "2017-2018", "ไทย"),
 
         histogram("Malaysia", colors["มาเลเซีย"]["transparent"][2], "2017-2018"),
         mean("Malaysia", colors["มาเลเซีย"]["transparent"][2], "2017-2018"),
-        mean_rect("Malaysia", colors["มาเลเซีย"]["opaque"][2], "2017-2018"),
+        mean_rect("Malaysia", colors["มาเลเซีย"]["opaque"][2], "2017-2018", 50),
         mean_text("Malaysia", "2017-2018", "มาเลเซีย"),
 
         subtitle("2561")
