@@ -2,10 +2,23 @@ const width = 1000;
 const height = 100;
 const domain_end = 140;
 const axis = { grid: false, title: false, ticks: false, tickCount: 1, labelExpr: "'อันดับดี'", labelPadding: 10 };
+
+const opaque_color_value = (x, a) => (255-a*(255-x));
+const opaque_color_string = (r, g, b, a) => "rgb(" + opaque_color_value(r,a) + "," + opaque_color_value(g,a) + "," + opaque_color_value(b,a) + ")";
+const opacity = 0.3;
 const colors = {
-  ไทย: { transparent: ["lightblue", "cornflowerblue", "blue"], opaque: "rgb(178,178,255)" },
-  เวียดนาม: { transparent: ["mediumseagreen", "seagreen", "green"], opaque: "rgb(178,217,178)" },
-  มาเลเซีย: { transparent: ["lightsalmon", "indianred", "red"], opaque: "rgb(255,178,178)" },
+  ไทย: { 
+    transparent: ["SteelBlue", "DodgerBlue", "blue"], 
+    opaque: [opaque_color_string(70, 130, 180, opacity), opaque_color_string(30, 144, 255, opacity), opaque_color_string(0, 0, 255, opacity)]
+  },
+  เวียดนาม: { 
+    transparent: ["mediumseagreen", "seagreen", "green"], 
+    opaque: [opaque_color_string(60, 179, 113, opacity), opaque_color_string(46, 139, 87, opacity), opaque_color_string(0, 128, 0, opacity)]
+  },
+  มาเลเซีย: { 
+    transparent: ["lightsalmon", "indianred", "red"], 
+    opaque: [opaque_color_string(255, 160, 122, opacity), opaque_color_string(205, 92, 92, opacity), opaque_color_string(255, 0, 0, opacity)]
+  },
 }
 
 let histogram = (country, color, year, max_y=20) => ({
@@ -15,7 +28,7 @@ let histogram = (country, color, year, max_y=20) => ({
       interpolate: "basis", //"cardinal", //"monotone",
       // type: "bar",
       // binSpacing: 0,
-      opacity: 0.3,
+      opacity: opacity,
       color: color
       // line: { color: color},
       // color: {
@@ -49,7 +62,7 @@ let mean = (country, color, year) => ({
     transform: [ { filter: { field: "year", equal: year } } ],
     mark: {
       type: "rule",
-      opacity: 0.3,
+      opacity: opacity,
     },
     encoding: {
       x: {
@@ -71,7 +84,7 @@ let mean_rect = (country, color, year) => ({
     type: "bar",
     baseline: "top",
     align: "left",
-    // opacity: 0.3,
+    // opacity: opacity,
   },
   encoding: {
     x: {
@@ -127,17 +140,17 @@ let subtitle = (text) => ({
 let histograms = (country, colors, text, max_y) => ([
     histogram(country, colors["transparent"][0], "2007-2008", max_y),
     mean(country, colors["transparent"][0], "2007-2008"),
-    mean_rect(country, colors["opaque"], "2007-2008"),
+    mean_rect(country, colors["opaque"][0], "2007-2008"),
     mean_text(country, "2007-2008", "2551"),
 
     histogram(country, colors["transparent"][1], "2012-2013", max_y),
     mean(country, colors["transparent"][1], "2012-2013"),
-    mean_rect(country, colors["opaque"], "2012-2013"),
+    mean_rect(country, colors["opaque"][1], "2012-2013"),
     mean_text(country, "2012-2013", "2556"),
 
     histogram(country, colors["transparent"][2], "2017-2018", max_y),
     mean(country, colors["transparent"][2], "2017-2018"),
-    mean_rect(country, colors["opaque"], "2017-2018"),
+    mean_rect(country, colors["opaque"][2], "2017-2018"),
     mean_text(country, "2017-2018", "2561"),
 
     subtitle(text)
@@ -165,17 +178,17 @@ let spec = {
       layer: [
         histogram("Viet Nam", colors["เวียดนาม"]["transparent"][2], "2017-2018"),
         mean("Viet Nam", colors["เวียดนาม"]["transparent"][2], "2017-2018"),
-        mean_rect("Viet Nam", colors["เวียดนาม"]["opaque"], "2017-2018"),
+        mean_rect("Viet Nam", colors["เวียดนาม"]["opaque"][2], "2017-2018"),
         mean_text("Viet Nam", "2017-2018", "เวียดนาม"),
 
         histogram("Thailand", colors["ไทย"]["transparent"][2], "2017-2018"),
         mean("Thailand", colors["ไทย"]["transparent"][2], "2017-2018"),
-        mean_rect("Thailand", colors["ไทย"]["opaque"], "2017-2018"),
+        mean_rect("Thailand", colors["ไทย"]["opaque"][2], "2017-2018"),
         mean_text("Thailand", "2017-2018", "ไทย"),
 
         histogram("Malaysia", colors["มาเลเซีย"]["transparent"][2], "2017-2018"),
         mean("Malaysia", colors["มาเลเซีย"]["transparent"][2], "2017-2018"),
-        mean_rect("Malaysia", colors["มาเลเซีย"]["opaque"], "2017-2018"),
+        mean_rect("Malaysia", colors["มาเลเซีย"]["opaque"][2], "2017-2018"),
         mean_text("Malaysia", "2017-2018", "มาเลเซีย"),
 
         subtitle("2561")
