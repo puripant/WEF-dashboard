@@ -5,7 +5,7 @@ const axis = { grid: false, title: false, ticks: false, tickCount: 1, labelExpr:
 
 const opaque_color_value = (x, a) => (255-a*(255-x));
 const opaque_color_string = (r, g, b, a) => "rgb(" + opaque_color_value(r,a) + "," + opaque_color_value(g,a) + "," + opaque_color_value(b,a) + ")";
-const opacity = 0.3;
+const opacity = 0.4;
 const colors = {
   ไทย: { 
     transparent: ["SteelBlue", "DodgerBlue", "blue"], 
